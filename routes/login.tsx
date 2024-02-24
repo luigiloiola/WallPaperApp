@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { View, Text, TextInput, TouchableOpacity, StyleSheet, Platform, StatusBar } from 'react-native';
-import CurvedButton from '../../../WallpaperApp/components/button';
 
 const LoginScreen = ({navigation}) => {
   const [email, setEmail] = useState('');
@@ -31,7 +30,6 @@ const LoginScreen = ({navigation}) => {
           value={password}
           secureTextEntry
         />
-        <CurvedButton onPress={() =>{handleLogin()}} title={"LOG IN"} buttonColor={'black'}/>
       </View>
     </>
   );

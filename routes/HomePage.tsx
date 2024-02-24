@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, FlatList, ImageBackground, Image, NativeModules } from 'react-native';
 import * as ImagePicker from 'expo-image-picker';
 import { Platform } from 'react-native';
-import { NativeModules } from 'react-native';
 
 
 const HomePage = () => {
@@ -30,7 +29,7 @@ const HomePage = () => {
   }, []);
 
   const setWallpaper = () => {
-    
+
   };
 const handleSelectFromGallery = async () => {
 
@@ -50,7 +49,7 @@ const handleSelectFromGallery = async () => {
 };
 
   return (
-    <ImageBackground source={backgroundImage} style={styles.backgroundImage}>
+
       <View style={styles.container}>
         <Text style={styles.appName}>App Name</Text>
 
@@ -73,7 +72,7 @@ const handleSelectFromGallery = async () => {
           </View>
         )}
       </View>
-    </ImageBackground>
+
   );
 };
 
