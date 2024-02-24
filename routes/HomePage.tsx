@@ -34,7 +34,6 @@ const HomePage = () => {
 const handleSelectFromGallery = async () => {
 
   try {
-    NativeModules.changeWallpaper();
     const result = await ImagePicker.launchImageLibraryAsync({
       mediaTypes: ImagePicker.MediaTypeOptions.Images,
       quality: 1,
